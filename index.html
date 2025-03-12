@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validator</title>
+    <!-- Font Awesome CDN must come before your custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" class="form">
+        <!-- form img -->
+        <div class="form-head"><img src="/360_F_638854973_hgAF7vx2dRayo1JOUdzgLt8o488gMwjS.jpg" alt=""></div>
+        <!-- form body -->
+        <div class="form-body">        
+        <!-- form title -->
+        <div class="title">Sign-in</div>
+        <!-- Name input -->
+        <label for="name">Name:</label>
+        <div class="iconflex">
+            <i class="fas fa-user first"></i>
+        <input type="text" placeholder="Write your name here..." id="name" name="name" required>
+        <i class="fas fa-eye toggle" style="opacity: 0;"></i>
+        </div>
+        <!-- email input -->
+        <label for="email"> Email:</label>
+        <div class="iconflex">
+            <i class="fas fa-envelope first"></i>
+             <input type="email" placeholder="Email" id="email" name="email" required>
+             <i class="fas fa-eye toggle" style="opacity: 0;"></i>
+        </div>
+        <p class="message error " id="email-message"></p>
+        <!-- password -->
+        <label for="password">Password:</label>
+        <div class="iconflex">     
+        <i class="fas  fa-key first"></i>
+       <input type="password" placeholder="Password" id="password" name="password" required>
+       <i class="fas fa-eye-slash toggle"></i>
+        </div>
+        <p class="message p-message"></p>
+        <!-- confirm password -->
+        <label for="confirm_password">Confirm Password:</label>
+        <div class="iconflex"><i class="fas fa-key first"></i><input type="password" placeholder="Confirm-password" id="confirm_password" name="confirm_password" required><i class="fas fa-eye-slash toggle1"></i></div>
+        <p class="message password-message"></p>
+        <!-- footer -->
+        <p class="p">already have an account <a href="login.html">click here to login</a> </p>
+        <button class="submit" type="submit">
+            Sign-in 
+        </button>
+    </div>
+    <br><br><br>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

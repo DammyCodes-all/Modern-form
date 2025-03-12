@@ -1,0 +1,178 @@
+.form{
+    display: flex;
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    gap: 10px;
+    position: relative;
+    top: 50px;
+    min-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0 ,0, 0.1);
+}
+@media (max-width:700px) {
+    .form{
+        flex-direction: column;
+        gap: 1px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .form-body{
+        width: 100%;
+        }
+    .form-head img{
+        width: 100%;
+    }
+    .form-body input{
+        width: 100%;
+    }
+    .submit{
+        width: 100%;
+    }
+    .p , .p a{
+        text-align: justify;
+    }
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-head.img{
+    width: 100%;
+}
+.form-head{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-body{
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    min-width: 300px;
+    width: 50%;
+}
+.form-body label{
+    text-align: left;
+    position: relative;
+    left: 20px;
+    align-self: flex-start;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.form-body input{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+}
+.form-body input:focus{
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.submit{
+    border: none;
+    width: 95%;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(3, 154, 3, 0.874);
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;  
+    transition: all 2s ease;
+}
+
+.p , .p a{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    font-weight: 100;
+    font-size: small;   font-size: small;
+}  
+.rotate{
+    transition:1s ease all;
+    transition: opacity 1s ease;
+    opacity: 0;
+    transform: rotate(-5deg);
+    position: relative;
+    left: 30px;
+    bottom: 5px;
+}
+.submit:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+    background-image: radial-gradient( circle 814px at -10.3% -19.8%,  rgba(3, 154, 3, 0.874) 0%, rgba(6,212,148,1) 55.1%, rgba(5,164,65,1) 82.6% );
+}
+.iconflex{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.iconflex .first{
+    position: relative;
+    left: 30px;
+    color: #aaa9a9;
+    font-size: 13px;
+}
+.iconflex .toggle, .toggle1{
+    color: #aaa9a9;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.error{
+    color: #ff3333;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+.valid{
+    color: #00cc00;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+.message{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    align-self: flex-start;
+    position: relative;
+    left: 15px;
+    bottom: 5px;
+}
+.form input:invalid{
+    border-color: #ff3333;
+}
+
+.form input:valid {
+    border-color: #00cc00;
+}

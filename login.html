@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validator</title>
+    <!-- Font Awesome CDN must come before your custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" class="form">
+        <!-- form img -->
+        <div class="form-head"><img src="/360_F_638854973_hgAF7vx2dRayo1JOUdzgLt8o488gMwjS.jpg" alt=""></div>
+        <!-- form body -->
+        <div class="form-body">        
+        <!-- form title -->
+        <div class="title">Log-in</div>
+        <!-- email input -->
+        <label for="email"> Email:</label>
+        <div class="iconflex">
+            <i class="fas fa-envelope first"></i>
+             <input type="email" placeholder="Email" id="email" name="email" required>
+             <i class="fas fa-eye toggle" style="opacity: 0;"></i>
+        </div>
+        <p class="message error " id="email-message"></p>
+        <!-- password -->
+        <label for="password">Password:</label>
+        <div class="iconflex">     
+        <i class="fas  fa-key first"></i>
+       <input type="password" placeholder="Password" id="password" name="password" required>
+       <i class="fas fa-eye-slash toggle"></i>
+        </div>
+        <p class="p">Don't have an account <a href="index.html">click here to Sign-in</a> </p>
+        <button class="submit" type="submit">
+            Log-in 
+        </button>
+    </div>
+    <br><br><br>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
